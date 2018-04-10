@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="@dimen/px_2"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginLeft="@dimen/px_30"/>
+        <TextView
+            android:id="@+id/tv_gasLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="@dimen/px_5"
+            android:textSize="@dimen/px_26"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <TextView
+            android:id="@+id/tv_gasType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/px_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px_26"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_marginRight="@dimen/px_30"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@color/black"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"/>
+</LinearLayout>

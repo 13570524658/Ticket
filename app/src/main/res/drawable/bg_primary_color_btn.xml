@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:color="@color/colorPrimaryBtnClick">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/px_8"/>
+            <solid android:color="@color/colorPrimaryBtnClick"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false" android:color="@color/colorPrimary">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/px_8"/>
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+</selector>

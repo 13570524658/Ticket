@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">Ticket</string>
+    <!--加载view-->
+    <string name="loading">正在加载...</string>
+
+    <!--标题-->
+    <string name="back_btn">返回</string>
+    <string name="gas_msg">气瓶详情</string>
+    <string name="customer_msg">客户详情</string>
+    <string name="car_msg">车辆详情</string>
+    <string name="worker_msg">从业人员详情</string>
+    <string name="order_msg">订单详情</string>
+    <string name="transport_task">配送任务</string>
+    <string name="since_log">订单自提记录</string>
+    <string name="transport_task_msg">配送任务详细</string>
+    <string name="since_task_msg">订单自提明细</string>
+    <string name="scan_name">扫二维码</string>
+    <string name="transport_scan_customerCardNo">用户卡交付回收信息</string>
+    <string name="my_QRCode">我的二维码</string>
+    <string name="about_my">关于我们</string>
+    <string name="by_putting">气瓶建档</string>
+    <string name="by_putting_log">气瓶建档记录</string>
+    <string name="by_putting_log_msg">气瓶档案</string>
+
+
+
+    <!--登录注册-->
+    <string name="login_retry_count">多次登录失败，请重新登录账号</string>
+    <string name="user_login">用户登录</string>
+    <string name="username">请输入账号</string>
+    <string name="password_hint">密码</string>
+    <string name="login">登录</string>
+    <string name="new_user_regist">新用户注册</string>
+    <string name="forget_psw">忘记密码</string>
+    <string name="username_not_null">用户名不能为空</string>
+    <string name="password_not_null">密码不能为空</string>
+    <!--扫码-->
+    <string name="scan_tip">将二维码放入框内，自动扫描</string>
+    <!--已扫到气瓶信息-->
+    <string name="gas_msgs">气瓶信息</string>
+    <!--对话框-->
+    <string name="alert_dialog_tips">提示</string>
+    <string name="alert_dialog_confirm">确定</string>
+    <string name="clear_task">确定清空扫瓶记录?</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="alert_dialog_retry">重试</string>
+    <string name="confirm_log_out">确定要退出?</string>
+    <string name="scan_error">扫码失败，请重试!</string>
+    <string name="init_failed">初始化失败，请确保网络状态良好后重试!</string>
+    <string name="net_error">网络不给力,请重试!</string>
+    <string name="enterprise_gas_msg_error">非本企业气瓶,无法显示详情!</string>
+    <string name="enterprise_worker_msg_error">非本企业从业人员,无法显示详情!</string>
+    <string name="enterprise_customer_msg_error">非本企业用户,无法显示详情!</string>
+    <string name="enterprise_car_msg_error">非本企业车辆,无法显示详情!</string>
+    <string name="enterprise_order_msg_error">非本企业订单,无法显示详情!</string>
+    <string name="enterprise_jf_hs_error">非本企业,无法交付回收!</string>
+    <string name="camera_error">打开相机出错!</string>
+    <string name="stop_login">禁止登录,请联系管理员!</string>
+    <string name="faile_gas_label">该气瓶标签已作废,无法显示详情!</string>
+    <!--按钮-->
+    <string name="confirm_jf">确认交付完成</string>
+    <string name="confirm_hs">确认回收完成</string>
+    <string name="confirm">确认完成</string>
+    <string name="clear">清空</string>
+    <string name="total">合计</string>
+    <!--九宫格-->
+    <string name="delivery_manager">配送管理"</string>
+    <string name="set_up_data">"建档管理"</string>
+    <string name="check_customer">"入户检查"</string>
+    <string name="jf_hs">"自提管理"</string>
+    <!--底部导航-->
+    <string name="my">我的</string>
+    <string name="home">首页</string>
+    <string name="scan">扫码</string>
+    <!--气瓶详情-->
+    <string name="gas_label">气瓶标签:</string>
+    <string name="gas_steel_code">气瓶钢码:</string>
+    <string name="gas_factory_id">出厂编号:</string>
+    <string name="gas_factory_company">出厂单位:</string>
+    <string name="gas_module">气瓶型号:</string>
+    <string name="gas_type">气瓶规格:</string>
+    <string name="gas_weight">气瓶重量:</string>
+    <string name="gas_product_time">生产日期:</string>
+    <string name="gas_last_check_company">上次检测单位:</string>
+    <string name="gas_last_check_time">上次检查日期:</string>
+    <string name="gas_next_check_time">下次检查日期:</string>
+    <string name="gas_set_up_persion">建档人:</string>
+    <string name="gas_set_up_time">建档时间:</string>
+    <string name="gas_up_data_persion">更新人:</string>
+    <string name="gas_up_data_time">更新时间:</string>
+    <string name="gas_image">气瓶图片:</string>
+    <string name="gas_qr_code">气瓶二维码:</string>
+
+    <!--客户详情-->
+
+    <string name="customer_name">客户名称:</string>
+    <string name="customer_id">客户编号:</string>
+    <string name="custromer_card_id">用户卡编号:</string>
+    <string name="customer_phone">联系电话:</string>
+    <string name="customer_address">客户地址:</string>
+    <string name="customer_area">所属区域:</string>
+    <string name="customer_grade">客户等级:</string>
+    <string name="customer_class_one">客户分类一:</string>
+    <string name="customer_class_two">客户分类二:</string>
+    <string name="customer_gas_station">所属气站:</string>
+    <string name="customer_QRCode">用户二维码:</string>
+    <!--车辆详情-->
+    <string name="car_no">车牌号:</string>
+    <string name="car_id">车辆编号:</string>
+    <string name="car_use">车辆用途:</string>
+    <string name="car_dep">所属部门:</string>
+    <string name="car_module">车辆型号:</string>
+    <string name="car_head">车辆负责人:</string>
+    <string name="car_phone">联系电话:</string>
+    <string name="car_product_factory">生产厂家:</string>
+    <string name="car_product_time">出厂日期:</string>
+    <string name="car_use_year">使用年限(年):</string>
+    <string name="car_check_time">检修周期:</string>
+    <string name="car_now_check_time">最近检修时间:</string>
+    <string name="car_now_gas_station">所服务的气站:</string>
+    <!--从业人员详情-->
+    <string name="worker_name">人员姓名:</string>
+    <string name="worker_id">员工编号:</string>
+    <string name="worker_sex">性别:</string>
+    <string name="worker_dep">所属组织:</string>
+    <string name="worker_phone">联系电话:</string>
+    <string name="worker_class">岗位类型:</string>
+    <string name="worker_station">所属气站:</string>
+    <string name="worker_QRCode">人员二维码:</string>
+
+    <!--订单详情-->
+    <string name="order_id">订单编号:</string>
+    <string name="order_from">订单来源:</string>
+    <string name="order_status">订单状态:</string>
+    <string name="order_transport_type">配送方式:</string>
+    <string name="order_customer_name">客户名称:</string>
+    <string name="order_customer_phone">客户电话:</string>
+    <string name="order_customer_address">客户地址:</string>
+    <string name="order_customer_time">下单时间:</string>
+    <string name="order_customer_QRcode">订单二维码:</string>
+
+    <!--配送任务-->
+    <string name="search">搜索</string>
+    <string name="search_hint">请输入任务编号/客户名称</string>
+    <string-array name="distribution_item">
+        <item>全部</item>
+        <item>已发货</item>
+    </string-array>
+    <string-array name="distribution_msg_item">
+        <item>任务详情</item>
+        <item>交付气瓶</item>
+        <item>回收气瓶</item>
+    </string-array>
+    <string-array name="item">
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="items">
+        <item>检查详情</item>
+        <item>用户信息</item>
+    </string-array>
+
+
+    <!--我的页面-->
+    <string name="out_app">退出</string>
+    <!--我的二维码页面-->
+    <string name="my_qrcode">我的二维码</string>
+    <!--关于我们页面-->
+    <string name="about">关于我们</string>
+    <string name="version">当前版本</string>
+    <!--用户卡交付回收-->
+    <string name="customer_jf_hs">用户卡交付回收信息</string>
+    <string name="order_jf_hs">订单交付回收信息</string>
+
+    <!--启动页面-->
+    <string name="app_company">Copyright © 2017未来信息技术有限公司版权所有</string>
+
+
+    <string name="recycler_view_utils_app_name">RALMDemo</string>
+
+    <string name="app_loading">加载中…</string>
+    <string name="app_loading_more">加载更多…</string>
+    <string name="app_no_more_data">没有更多数据了…</string>
+    <string name="ptr_frame_layout_content_empty">The content view in PtrFrameLayout is empty. Do you forget to specify its id in xml layout file?</string>
+
+    <!--时间选择器-->
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+</resources>

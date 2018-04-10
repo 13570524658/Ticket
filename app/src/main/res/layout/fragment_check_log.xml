@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/ll_TotalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_60"
+            android:background="@color/bk_grays">
+            <TextView
+                android:id="@+id/task_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入户安全检查记录数量:"
+                android:layout_marginLeft="@dimen/px_30"
+                android:textColor="@color/TextColor"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/px_26"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_15"
+                android:textSize="@dimen/px_26"
+                android:textColor="@color/TextColor"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/task_total"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/x_recyclerview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

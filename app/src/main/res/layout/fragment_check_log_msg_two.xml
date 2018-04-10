@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="基础信息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="客户名称:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="客户编号:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_customerID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="客户地址:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="客户电话:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="用户卡编号:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_customerCardNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="所属气站:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="气瓶信息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="检查时录入气瓶数量:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_checkGasTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:visibility="gone"
+                android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_2"
+                        android:background="@color/table"
+                        android:layout_marginLeft="@dimen/px_30"
+                        android:layout_marginRight="@dimen/px_30"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/px_2"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/px_30"
+                        android:background="@color/table"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="气瓶标签"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/px_5"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px_26"/>
+                    <TextView
+                        android:layout_width="@dimen/px_2"
+                        android:layout_height="match_parent"
+                        android:background="@color/table"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/px_5"
+                        android:text="气瓶规格"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px_26"/>
+                    <TextView
+                        android:layout_width="@dimen/px_2"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px_30"
+                        android:background="@color/table"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_2"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:background="@color/table"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_gaslabeMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

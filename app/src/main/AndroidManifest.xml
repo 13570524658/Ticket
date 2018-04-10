@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.future.zhh.ticket">
+    <!--发布APP时过滤设备-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.flash" />
+    <!--调用Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--闪光灯-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!--振动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--读写存储卡-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--网络连接-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序访问有关GSM网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--唤醒-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+
+    <!--默认启动页面-->
+    <application
+        android:name=".presentation.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".presentation.view.activities.DefaultActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--引导进场页面-->
+        <activity android:name=".presentation.view.activities.GuidePageActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--登录页面-->
+        <activity android:name=".presentation.view.activities.LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--主页面-->
+        <activity android:name=".presentation.view.activities.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <!--扫码获取信息和判断状态功能页面-->
+        <activity android:name=".presentation.view.activities.ScanInfoActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--扫气瓶码交付回收功能页面-->
+        <activity android:name=".presentation.view.activities.ScanGasInfoActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--扫气瓶交付回收记录页面-->
+        <activity android:name=".presentation.view.activities.JFHSGasScanLogActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--配送任务列表页面-->
+        <activity android:name=".presentation.view.activities.DeliveryManagerActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--配送任务进行订单交付回收页面-->
+        <activity android:name=".presentation.view.activities.OrderJfHsMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--配送任务进行用户卡交付回收页面-->
+        <activity android:name=".presentation.view.activities.CustomerJfHsMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--配送任务详细页面-->
+        <activity android:name=".presentation.view.activities.DeliveryManagerMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <!--气瓶建档页面-->
+        <activity android:name=".presentation.view.activities.ByInputtingActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--气瓶建档记录页面-->
+        <activity android:name=".presentation.view.activities.ByInputtingLogActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--气瓶建档编辑页面-->
+        <activity android:name=".presentation.view.activities.ByInputtingEditActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--气瓶建档修改气瓶标签-->
+        <activity android:name=".presentation.view.activities.ByInputtingChangeLabelActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--自提订单未完成状态-->
+        <activity android:name=".presentation.view.activities.SinceNotStateOrderActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--自提订单完成状态-->
+        <activity android:name=".presentation.view.activities.SinceYesStateOrderActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--自提订单记录-->
+        <activity android:name=".presentation.view.activities.SinceLogActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--自提订单记录详细-->
+        <activity android:name=".presentation.view.activities.SinceLogMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--自提扫用户卡-->
+        <activity android:name=".presentation.view.activities.SinceCustomerActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+        <!--气瓶详情页面-->
+        <activity android:name=".presentation.view.activities.GasMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--客户详情页面-->
+        <activity android:name=".presentation.view.activities.CustomerMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--车辆详情页面-->
+        <activity android:name=".presentation.view.activities.CarMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--订单详情页面-->
+        <activity android:name=".presentation.view.activities.OrderMsgActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <!--从业人员详情页面-->
+        <activity android:name=".presentation.view.activities.WorkerMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <!--我的页面-->
+        <activity android:name=".presentation.view.activities.AboutActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--我的二维码页面-->
+        <activity android:name=".presentation.view.activities.MyQrCodeActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+
+
+        <!--入户检查用户信息页面-->
+        <activity android:name=".presentation.view.activities.CheckActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--入户检查页面-->
+        <activity android:name=".presentation.view.activities.CheckMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--入户检查记录-->
+        <activity android:name=".presentation.view.activities.CheckLogActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--入户检查记录详细-->
+        <activity android:name=".presentation.view.activities.CheckLogMsgActivity"
+            android:windowSoftInputMode="stateHidden" />
+    <!--截图-->
+        <activity android:name=".presentation.view.activities.ClipImageActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--安卓7.0动态权限-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+</manifest>

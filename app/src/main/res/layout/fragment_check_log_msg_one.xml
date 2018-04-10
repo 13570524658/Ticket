@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="环境检查"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="室内有无通风口:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isAirVents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_15"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="有无安全警示标志:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isSafetyWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="有无燃气报警器:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="是否正确安装燃气报警器:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isTrueAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_15"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="有无消防器材:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_isFireEquipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="气瓶检查"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="过期的气瓶数量:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_outTimeGasTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="报废的气瓶数量:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_scrappingGasTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="气瓶放置位置:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_gasLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="气瓶离炤间距:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_spacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="是否离灶具过近:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_isNearStove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_15"
+                android:background="@color/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/px_30">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="气瓶阀门是否漏气:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_isAirLeakageValve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="设备检查"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="灶具是否带熄火保护装置:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_isProtectionDeviceStove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="灶具是否在使用年限内:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isToolUseYearStove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="烟道是否完好:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isSmokeRoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="燃气热水器类型:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_hotWaterToolModule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="燃气热水器是否在使用年限内期:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isHotWaterToolUseYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="配件检查"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="调压器是否漏气:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_isVoltageRegulatorAirLeakage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="连接管是否老化:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_isConnectingPipeAging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_30"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="检查人:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_checkPersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="检查时间:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+
+                <TextView
+                    android:id="@+id/tv_checkTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="检查图片"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_200"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_checkImageOne"
+                    android:layout_width="@dimen/px_200"
+                    android:layout_height="@dimen/px_200"
+                    android:visibility="gone"
+                    android:src="@mipmap/add_image" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_checkImageTwo"
+                    android:layout_width="@dimen/px_200"
+                    android:layout_height="@dimen/px_200"
+                    android:visibility="gone"
+                    android:src="@mipmap/add_image" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_checkImageThree"
+                    android:layout_width="@dimen/px_200"
+                    android:layout_height="@dimen/px_200"
+                    android:visibility="gone"
+                    android:src="@mipmap/add_image" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="其他情况"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_otherRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textSize="@dimen/px_26"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginBottom="@dimen/px_15"
+                android:background="@color/bk_grays"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="检查结论"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_isPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:textSize="@dimen/px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_50"
+                android:layout_marginTop="@dimen/px_15"
+                android:background="@color/bk_grays"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

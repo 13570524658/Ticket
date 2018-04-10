@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/AppColor"
+            app:popupTheme="@style/AppTheme"
+            app:contentInsetStart="0dp"
+            app:title="@string/app_name">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_98" >
+                    <LinearLayout
+                        android:id="@+id/ibtnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true">
+                        <ImageView
+                            android:id="@+id/img_ibtnBack"
+                            android:layout_width="@dimen/px_70"
+                            android:layout_height="@dimen/px_50"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                            android:src="@mipmap/but_fh"
+                            android:background="@android:color/transparent"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/img_ibtnBack"
+                            android:text="@string/back_btn"
+                            android:textSize="@dimen/textSize_18"
+                            android:textColor="@color/TitelTextColor"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvToolbarTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/text_size_18"
+                        android:textColor="@color/TitelTextColor"
+                        android:text="@string/scan_name"/>
+
+                    <ImageButton
+                        android:id="@+id/ibtnSetting"
+                        android:layout_width="@dimen/px_100"
+                        android:layout_height="@dimen/px_100"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/jiand_btnl"
+                        android:visibility="gone"
+                        android:background="@android:color/transparent"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar"/>
+
+
+    <CheckBox
+        android:id="@+id/cbFlashLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="@dimen/px_50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_cb_flash_light"
+        android:button="@null"
+        android:checked="false" />
+    <TextView
+        android:id="@+id/textTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/scan_name"
+        android:padding="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@color/colorHardBlack"
+        android:layout_below="@id/appBar"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_32" />
+</RelativeLayout>
