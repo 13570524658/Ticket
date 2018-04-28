@@ -32,7 +32,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
  * Created by Administrator on 2017/11/19.
  */
 
-public class RetrofitManager {
+public class  RetrofitManager {
 
     private Context context;
 
